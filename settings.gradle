@@ -1,0 +1,3 @@
+rootProject.name='JitPackDemo'
+include ':app'
+include ':lib_jitpack'
