@@ -4,7 +4,6 @@ apply plugin: 'maven-publish'
 def mVersionCode = 1
 def mVersionName = "1.0"
 //https://github.com/itzheng/JitPackDemo
-//def mLibName = "JitPackDemo"
 def mGroupId="com.github.itzheng"
 android {
     compileSdkVersion 30
@@ -50,7 +49,7 @@ afterEvaluate {
                 from components.release
                 // You can then customize attributes of the publication as shown below.
                 groupId = mGroupId
-                artifactId = 'final'
+                artifactId = 'release'
                 version = mVersionName
             }
             // Creates a Maven publication called “debug”.
@@ -58,7 +57,7 @@ afterEvaluate {
                 // Applies the component for the debug build variant.
                 from components.debug
                 groupId = mGroupId
-                artifactId = 'final-debug'
+                artifactId = 'debug'
                 version = mVersionName
             }
         }
