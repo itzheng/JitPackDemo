@@ -14,4 +14,5 @@ public class MyJitLib {
      * apply plugin: 'com.github.dcendents.android-maven'
      */
     private static final String V_0_6 = "apply plugin: 'com.github.dcendents.android-maven'";
+    private static final String V_0_7 = "remove afterEvaluate";
 }

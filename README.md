@@ -1,5 +1,5 @@
 # 将 Android Module 添加到 JitPack
-## 一、将 Github Module 添加到 JitPack
+## 一、[将 Github Module 添加到 JitPack](https://jitpack.io/docs/BUILDING/)
 
 * [Android Gradle 插件 3.6.0 及更高版本](https://developer.android.com/studio/build/maven-publish-plugin#groovy)
 * [在对应的 gradle 添加插件 apply plugin: 'maven-publish'](https://docs.gradle.org/current/userguide/publishing_maven.html)
@@ -11,7 +11,6 @@
 git tag -a v0.1 -m "Test tag"
 git tag
 git push origin v0.1
-
 or
 git tag -a v0.1 -m "Test tag" uuiduuid
 git push origin --tags
