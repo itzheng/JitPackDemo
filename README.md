@@ -11,13 +11,20 @@
 git tag -a v0.1 -m "Test tag"
 git tag
 git push origin v0.1
+
+or
+git tag -a v0.1 -m "Test tag" uuiduuid
+git push origin --tags
 ```
 * [How to ](https://jitpack.io/#itzheng/JitPackDemo)
 * Commits -> Get it
-* [添加文档注释](https://jitpack.io/docs/#javadoc-publishing)
+* [添加文档注释](https://jitpack.io/docs/#javadoc-publishing) [Thanks](https://www.shuzhiduo.com/A/1O5EomWz7a/)
 ```
-
+1.classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5' on project build.gradle dependencies
+2.apply plugin: 'com.github.dcendents.android-maven' on module build.gradle top
+3.Add artifacts (sourcesJar/javadocJar), see Demo.
 ```
+* [javadoc](https://javadoc.jitpack.io/com/github/itzheng/JitpackDemo/0.6/javadoc/)
 * 强制更新 Gradle 依赖
 ```base
 gradlew build --refresh-dependencies
@@ -33,10 +40,10 @@ allprojects {
 }
 ```
 2.在项目 build.gradle 添加依赖
-
+[![](https://jitpack.io/v/itzheng/JitPackDemo.svg)](https://jitpack.io/#itzheng/JitPackDemo)
 ```gradle
 dependencies {
     ...
-    implementation 'com.github.itzheng.JitPackDemo:release:v0.1'
+    implementation 'com.github.itzheng:JitPackDemo:0.6'
 }
 ```
