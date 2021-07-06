@@ -14,6 +14,10 @@ git push origin v0.1
 ```
 * [How to ](https://jitpack.io/#itzheng/JitPackDemo)
 * Commits -> Get it
+* [添加文档注释](https://jitpack.io/docs/#javadoc-publishing)
+```
+
+```
 
 ## 二、使用
 1.在 build.gradle on Project 添加maven地址

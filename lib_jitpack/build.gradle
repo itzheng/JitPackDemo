@@ -25,21 +25,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
-}
-
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation 'androidx.appcompat:appcompat:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-}
-
-// Because the components are created only during the afterEvaluate phase, you must
-// configure your publications using the afterEvaluate() lifecycle method.
-afterEvaluate {
     //----------------------添加这些依赖库才能查看源码注释-----------------------
 // 指定编码
     tasks.withType(JavaCompile) {
@@ -65,6 +50,20 @@ afterEvaluate {
         archives sourcesJar
         archives javadocJar
     }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
+afterEvaluate {
     // ======================发布，这个是必须要的=============================
     publishing {
         publications {
