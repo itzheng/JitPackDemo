@@ -7,6 +7,11 @@
 * [Add afterEvaluate.publishing method on Gradle](https://developer.android.com/studio/build/maven-publish-plugin#groovy)
 * Right -> Gradle -> publishing -> publish ReleaseXxxToXxx
 * push git hub-> Add tag.
+```bash
+git tag -a v0.1 -m "Test tag"
+git tag
+git push origin v0.1
+```
 * [How to ](https://jitpack.io/#itzheng/JitPackDemo)
 * Commits -> Get it
 
