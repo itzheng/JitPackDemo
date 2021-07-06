@@ -18,7 +18,10 @@ git push origin v0.1
 ```
 
 ```
-
+* 强制更新 Gradle 依赖
+```base
+gradlew build --refresh-dependencies
+```
 ## 二、使用
 1.在 build.gradle on Project 添加maven地址
 ```gradle
